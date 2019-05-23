@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Room 2</title>
+        <!-- This is a same room with aframe 0.8.2 where reflection doesn't work -->
+        <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    </head>
+    
+    <body>
+        <a-scene antialias="true">
+            <!-- Assets -->
+            <a-assets>
+                <img id="wall" src="assets/images/BrickLargeBlocks.jpg">
+            </a-assets>
+            <!-- Room -->
+            <a-box color="#FFFFFF"
+                   src="#wall"
+                   repeat="1 1"
+                   normal-scale="1 -1"
+                   width="6.4" height="3.6" depth="4.2"
+                   position="0 1.6 -5"
+                   scale="-1 1 1">
+            </a-box>
+        </a-scene>
+    </body>
+</html>
